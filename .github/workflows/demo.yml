@@ -1,0 +1,12 @@
+name: Demo Print Name
+
+# Sólo se dispara manualmente desde la pestaña Actions
+on:
+  workflow_dispatch:
+
+jobs:
+  print-name:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Muestra mi nombre completo
+        run: echo "IVÁN RAMOS GONZÁLEZ"
